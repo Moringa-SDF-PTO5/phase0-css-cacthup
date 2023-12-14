@@ -9,24 +9,84 @@ body {
    left: 50%;
    position: absolute;
    transform: translate(-50%, -50%);
-   background-color: blueviolet;
 }
 
 .circle {
     width: 200px;
     height: 200px;
-    background-color: red;
-    border: 2px solid white;
-    border-radius: 50%;
     position: absolute;
+    border-radius: 50%;
 }
 
-.circle:first-child {
+.circle:nth-child(1) {
+    background: linear-gradient(#1845ad, #23a2f6);
     left: -80px;
     top: -80px;
 }
 
 .circle:last-child {
+    background: linear-gradient(#ff5124, #f09819);
     bottom: -80px;
     right: -80px;
 }
+
+form {
+    height: 520px;
+    width: 430px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.132);
+    border-radius: 10px;
+    padding: 50px 35px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.101);
+}
+
+form * {
+    color: white;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.079);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+button {
+    margin-top: 40px;
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* TODO:   1. Align spacing
+        2. Add the two missing buttons */
